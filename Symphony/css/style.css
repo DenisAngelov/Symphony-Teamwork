@@ -45,9 +45,14 @@ table {
 
 #wrapper {
 	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
 }
 
-header {
+/*-----------------------------------------------------------------------------
+Header
+-----------------------------------------------------------------------------*/
+
+#header-top {
 	width: 100%;
 	height: 100vh;
 	background: url("../images/banner.jpg");
@@ -72,6 +77,11 @@ header {
 			float: left;
 		}
 
+		.top-logo:hover {
+			cursor: pointer;
+		}
+
+
 	.top-menu {
 		float: right;
 		display: inline-block;
@@ -81,22 +91,37 @@ header {
 		margin-top: 50px;
 		margin-right: 50px;
 	}
-
-		.top-menu li {
-			display: inline-block;
-			width: 100px;
-			height: 40px;
-			line-height: 40px;
-			text-align: center;
-		}
-
+	
 		.top-menu a {
 			text-decoration: none;
+			font-weight: bold;
 			color: #EBCA70;
 		}
 
+		.top-menu li {
+			display: inline-block;
+			margin-left: 30px;
+			box-sizing: border-box;
+			text-align: center;
+			width: 110px;
+			height: 40px;
+			line-height: 40px;
+			border-radius: 5px;
+		}
+
+		.top-menu li:hover {
+			background-color: #EBCA70;
+			color: #071621;
+			cursor: pointer;
+			transition: all 0.5s ease;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+		}
+
 	#top-title {
-		width: 700px;
+		width: 850px;
 		margin: 0 auto;
 	}
 
@@ -105,5 +130,200 @@ header {
 			text-align: center;
 			color: #EBCA70;
 			font-size: 50px;
+			font-weight: bold;
 		}
 
+	.screenHeight {
+		height: 100vh;
+		box-sizing: border-box;
+	}
+
+		#strengths article {
+			text-align: center;
+			margin-top: 100px;
+		}
+
+			#strengths article p{
+				width: 300px;
+				text-align: center;
+				margin: 0px auto;
+				line-height: 20px;
+				color: #6F747B;
+			}
+
+
+		#strengths h3 {
+			color: #0C2337;
+			margin: 20px auto;
+			font-size: 30px;
+			width: 200px;
+			font-weight: bold;
+			text-align: center;
+
+		}
+
+/*-----------------------------------------------------------------------------
+Works
+-----------------------------------------------------------------------------*/
+
+	.work {
+		overflow: hidden;
+		cursor: pointer;
+	}
+
+	.works-row {
+		margin-top: 100px;
+	}
+
+	#works h2 {
+		font-weight: bold;
+		font-size: 60px;
+		text-align: center;
+		padding-top: 100px;
+		color: #0C2337;
+	}
+
+	.work h5, .work p, .work img {
+			-moz-transition: all, 0.5s ease;
+		    -o-transition: all, 0.5s ease;
+		    -webkit-transition: all, 0.5s ease;
+		    transition: all, 0.5s ease; 
+		}
+
+	.work .overlay-caption {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 20px;
+		color: #EBCA70;
+	}
+
+	.work h5 {
+		font-weight: bold;
+		margin-bottom: 5px;
+		-moz-transform: translate3d(0, -200%, 0);
+	    -ms-transform: translate3d(0, -200%, 0);
+	    -webkit-transform: translate3d(0, -200%, 0);
+	    transform: translate3d(0, -200%, 0);
+	}
+
+	.work p {
+		-moz-transform: translate3d(0, 200%, 0);
+	    -ms-transform: translate3d(0, 200%, 0);
+	    -webkit-transform: translate3d(0, 200%, 0);
+	    transform: translate3d(0, 200%, 0);
+	}
+
+	.work .overlay {
+		background: rgba(12, 35, 55, 0.9);
+		text-align: center;
+		opacity: 0;
+		width: 25%;
+		height: 28.5%;
+		position: absolute;
+	}
+
+	.work a {
+		width: inherit;
+	}
+
+	.work img {
+		width: 100%;
+	}
+
+		.work:hover img{
+			-webkit-transform:scale(1.2);
+		    -moz-transform:scale(1.2); 
+		    -ms-transform:scale(1.2); 
+		    -o-transform:scale(1.2); 
+		    transform:scale(1.2);
+		}
+
+		.work:hover .overlay {
+			opacity: 1;
+			z-index: 1;
+			cursor: pointer;
+		}
+
+		.work:hover .overlay h5, .work:hover .overlay p {
+		    opacity: 1;
+		    -moz-transform: translate3d(0, 0, 0);
+		    -ms-transform: translate3d(0, 0, 0);
+		    -webkit-transform: translate3d(0, 0, 0);
+		    transform: translate3d(0, 0, 0); 
+		}
+
+/*-----------------------------------------------------------------------------
+Grid
+-----------------------------------------------------------------------------*/
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.row {
+    border: #9b59b6;
+    overflow: hidden;
+}
+.col-12 {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+}
+.col-11 {
+    float: left;
+    width: 91.66666667%;
+}
+
+.col-10 {
+    float: left;
+    width: 83.33333333%;
+}
+
+.col-9 {
+    float: left;
+    width: 75%;
+}
+
+.col-8 {
+    float: left;
+    width: 66.66666667%;
+}
+
+.col-7 {
+    float: left;
+    width: 58.33333333%;
+}
+
+.col-6 {
+        float: left;
+        width: 50%;
+}
+
+.col-5 {
+    float: left;
+    width: 41.66666667%;
+}
+
+.col-4 {
+        float: left;
+        width: 33.3333%;
+}
+
+.col-3 {
+    float: left;
+    width: 25%;
+}
+
+.col-2 {
+    float: left;
+    width: 16.66666667%;
+}
+
+.col-1 {
+    float: left;
+    width: 8.33333333%;
+}
